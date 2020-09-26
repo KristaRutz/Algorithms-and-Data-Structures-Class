@@ -42,7 +42,7 @@ class PriorityQueue {
     let leftIdx = 2 * index + 1;
     let rightIdx = 2 * index + 2;
 
-    // if current node has no children, it's sunk to the end
+    // if current node has no children, it's already sunk to the end
     if (leftIdx >= this.nodes.length) {
       return this;
     }
@@ -75,7 +75,6 @@ queue.enqueue("brush teeth", 2);
 queue.enqueue("organize photos", 10);
 queue.enqueue("buy plane ticket", 1);
 queue.enqueue("eat breakfast", 0);
-queue.enqueue("buy a new bra", 5);
 queue.dequeue();
 queue.dequeue();
 queue.enqueue("get a job", 0);
